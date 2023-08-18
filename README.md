@@ -71,3 +71,22 @@ Algoritmo "MariaDolar"
         Escreva ("Você pode trocar seus R$",realPossui," em ",R:4:2," dolares")
 FimAlgoritmo
 ```
+
+### **Problema 03** 📚
+
+Maria já viajou e agora **precisa saber quanto de imposto vai pagar em cada item** comprado lá nos EUA.  
+
+- **Iremos perguntar quanto custou o produto e utilizar a taxação base de 60%.**
+
+```
+Algoritmo "Imposto"
+   var
+       imposto, valorProduto, valorProdutoImposto: real
+   inicio
+        Escreva ("Quantos reais você pagou no produto? R$")
+        Leia (valorProduto)
+        imposto <- (valorProduto * 0.60)
+        valorProdutoImposto <- valorProduto + imposto
+        Escreva ("Você vai pagar no produto com imposto R$", valorProdutoImposto:5:2)
+FimAlgoritmo
+```
