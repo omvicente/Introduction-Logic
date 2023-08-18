@@ -90,3 +90,27 @@ Algoritmo "Imposto"
         Escreva ("Você vai pagar no produto com imposto R$", valorProdutoImposto:5:2)
 FimAlgoritmo
 ```
+### **Problema 04** 📚
+
+Maria já viajou e agora **precisa de um empréstimo**.  
+
+- **Iremos perguntar quanto ela precisa e qual a taxa do banco**
+
+```
+algoritmo "EmprestimoMari"
+var
+   valorEmp, valorParc, parcEmp, jurEmp, jurBanc, valorPag: real
+inicio
+   Escreva("Qual é o valor que você precisa?")
+   Leia(valorEmp)
+   Escreva("Qual é o valor da taxa bancaria em %?")
+   Leia(jurBanc)
+   Escreva("Qual é a quantidade de parcelas que quer fazer?")
+   Leia(parcEmp)
+   jurEmp <- valorEmp * (jurBanc/100)
+   valorPag <- jurEmp + valorEmp
+   valorParc <- valorPag / parcEmp
+   EscrevaL("Voce vai pagar", parcEmp, "x de R$", valorParc:5:2)
+   EscrevaL("O valor do juros total é R$", jurEmp:5:2)
+fimalgoritmo
+```
