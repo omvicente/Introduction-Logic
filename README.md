@@ -114,3 +114,30 @@ inicio
    EscrevaL("O valor do juros total é R$", jurEmp:5:2)
 fimalgoritmo
 ```
+
+## **Estruturas condicionais - Exercício** 🔥
+
+### **Problema 01** 📚
+
+A ideia é descobrir a idade da pessoa e mostrar se já pode tirar carteira de habilitação.  
+
+- **Iremos perguntar o ano atual e o ano de nascimento da pessoa**
+
+```
+algoritmo "Habilitacao"
+var
+   ano, nasc, idade: inteiro
+inicio
+   Escreva("Em que ano nós estamos?")
+   Leia(ano)
+   Escreva("Em que ano você nasceu?")
+   Leia(nasc)
+   idade <- ano - nasc
+   EscrevaL("Em ", ano, " voce tera ", idade, " anos.")
+   Se (idade >= 21) entao
+      EscrevaL("Você já pode tirar sua habilitação.")
+      Senao
+         EscrevaL("Você ainda não pode tirar sua habilitação.")
+   FimSe
+fimalgoritmo
+```
