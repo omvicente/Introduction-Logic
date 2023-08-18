@@ -141,3 +141,55 @@ inicio
    FimSe
 fimalgoritmo
 ```
+
+## **Laços de Repetição - Exercícios** 🔥
+
+### **Problema 01** 📚
+
+Um contador que pergunta um número inicial e um final, se o número inicial for maior que o final, a contagem é regressiva. Senão, a contagem será progressiva. 
+
+```
+algoritmo "Contador"
+var
+   cont, ini, fim: inteiro
+inicio
+   Escreva("Inicio:  ")
+   leia(ini)
+   Escreva("Fim:  ")
+   leia(fim)
+   cont <- ini
+   Se (ini <= fim) entao
+      Enquanto (cont <= fim) faca
+         Escreva(cont,"..")
+         cont <- cont + 1
+      FimEnquanto
+      Senao
+         Enquanto (cont >= fim) faca
+               Escreva(cont,"..")
+               cont <- cont - 1
+         FimEnquanto
+   FimSe
+fimalgoritmo
+```
+
+### **Problema 02** 📚
+
+Uma simples **tabuada**, onde o usuário pergunta qual a tabuada quer saber e seu multiplicador.
+
+```
+algoritmo "Tabuada"
+var
+   cont, num, resul, mult: inteiro
+inicio
+   Escreva("Qual tabuada você quer saber?")
+   leia(num)
+   Escreva("Até qual multiplicador?")
+   leia(mult)
+   cont <- 1
+   Repita
+      resul <- num * cont
+      Escreval(num, " x", cont," = ", resul)
+      cont <- cont + 1
+   Ate (cont > Mult)
+fimalgoritmo
+```
